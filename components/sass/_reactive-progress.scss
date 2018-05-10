@@ -1,0 +1,131 @@
+div#reactive-progress{
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+
+  width: 200px;
+
+  @media screen and (max-width: $mediumlg-screen-width) and (min-width: $medium-screen-width) {
+    left: 2%;
+  }
+
+
+  ul.segment{
+
+    $drop-size: 1.2rem;
+    $uniform-drop-droplet-margin: 1.5rem;
+
+    li {
+      &:after{
+        content: "\A";
+        white-space: pre;
+      }
+
+      &.active{
+
+        &:before{
+          background-color: $project-primary;
+        }
+
+      }
+    }
+
+    li.drop {
+      display: block;
+      margin-top: $uniform-drop-droplet-margin;
+      font-size: $drop-size;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+        border: 2px solid $project-primary;
+      }
+
+      span.label {
+        display: none;
+        opacity: 0;
+      }
+    }
+
+    li.droplet {
+      display: block;
+      margin-top: $uniform-drop-droplet-margin;
+      font-size: 0.2rem;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: $drop-size/4;
+        height: 1em;
+        width: 1em;
+        border-radius: 100%;
+        border: 2px solid $project-primary;
+      }
+
+    }
+  }
+
+  &:hover {
+    width: 300px;
+
+    ul.segment {
+      a {
+        color: $project-primary !important;
+        text-decoration: none;
+      }
+      li.drop {
+        span.label {
+          animation-delay: 0.5s;
+          animation-duration: 1.5s;
+          animation-name: fadeIn;
+          animation-fill-mode: both;
+          display: inline;
+          font-size: 1.2rem;
+          line-height: 1.1em;
+          float: left;
+          margin-left: 40px;
+          width: 350px;
+        }
+      }
+
+    }
+  }
+
+}
+
+div.reactive-progress-background{
+  position: fixed;
+  height: 100%;
+  width: 0%;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+div#reactive-progress-hider{
+  &.hidden {
+    display: none;
+  }
+
+  @media screen and (max-width: $medium-screen-width){
+    display: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

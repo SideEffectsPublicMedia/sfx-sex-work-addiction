@@ -1,0 +1,168 @@
+div.title-card-pa{
+  //background-color: rgba($project-primary, 0.85);
+  background-image: url("../img/primitive-embrace-vectorized.svg");
+  background-position: right center;
+  background-size: cover;
+  background-repeat: repeat;
+
+  @media screen and (max-width: $mediumlg-screen-width) {
+    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background-position: center center;
+    background-size: auto contain;
+    background-repeat: repeat;
+  }
+
+  @media screen and (max-width: $medium-screen-width) {
+    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background-position: center center;
+    background-size: auto contain;
+    background-repeat: repeat;
+  }
+
+  height: 20000px;
+
+  a.home-logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    max-width: 150px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  div.card-content{
+    max-width: 1400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    div.card-content-titles{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //margin-bottom: 26%;
+      transform: translateY(-30vh);
+
+      @media screen and (max-width: $mediumlg-screen-width){
+        left: 30px;
+      }
+
+      @media screen and (max-width: $medium-screen-width){
+        transform: translateY(-20vh);
+      }
+
+    }
+
+    h1 {
+      font-family: $sans-serif;
+      color: $project-text-dark;
+      font-size: 5.5rem;
+      font-weight: bold;
+      margin-bottom: 0.2em;
+      line-height: 1.0em;
+      max-width: 800px;
+    }
+
+    p.subhead{
+      font-family: $serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: $gray-light;
+      max-width: 800px;
+    }
+
+    p.author{
+      font-family: $sans-serif;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: lighten($gray-light, 10%);
+      margin-bottom: 0.5em;
+      max-width: 800px;
+    }
+
+    @media screen and (max-width: $mediumlg-screen-width){
+      h1{
+        font-size: 4.0rem;
+
+        max-width: 53%;
+      }
+
+      p.author {
+        font-size: 2.0rem;
+        max-width: 50%;
+      }
+      p.subhead {
+        font-size: 2.0rem;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: $medium-screen-width){
+      h1{
+        font-size: 2.3rem;
+
+        max-width: 53%;
+      }
+      p.author {
+        font-size: 1.2rem;
+        max-width: 50%;
+      }
+      p.subhead {
+        font-size: 1.2rem;
+        max-width: 50%;
+      }
+    }
+
+    @media screen and (max-width: $small-screen-width){
+      h1{
+        font-size: 2rem;
+
+        max-width: 45%;
+      }
+
+      p.subhead {
+        display: none;
+        font-size: 1.4rem;
+        max-width: 50%;
+      }
+      p.author {
+        font-size: 1.4rem;
+        max-width: 50%;
+      }
+    }
+
+    div.card-content-img{
+
+      position: absolute;
+
+      bottom: 0;
+      right: 0;
+      left: 0;
+
+
+      height: 100%;
+
+      img.silhouette{
+        margin-left: 60%;
+        max-height: 100%;
+      }
+    }
+  }
+
+
+
+}
+
+div.reactive-progress-background{
+  display: none;
+
+}

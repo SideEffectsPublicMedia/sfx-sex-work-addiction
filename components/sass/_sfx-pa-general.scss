@@ -1,0 +1,186 @@
+body {
+  &:before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    background-image: url("../img/cubes-2x.png");
+    background-size: 90px 134px;
+    //background-image: url("../img/concrete-texture.png");
+    background-repeat: repeat;
+    z-index: -100;
+  }
+
+}
+
+$text-col-size: 900px;
+
+article {
+  margin-top: 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+
+
+
+  section {
+    margin-bottom: 5em;
+    h2 {
+      @include contained($text-col-size);
+      font-size: 3rem;
+      font-family: $sans-serif;
+      font-weight: bold;
+     color: $project-primary;
+    }
+
+    h3 {
+      @include contained($text-col-size);
+      font-size: 2rem;
+      font-family: $sans-serif;
+      font-weight: bold;
+      color: $project-primary;
+      max-width: $text-col-size;
+      margin-top: 1.5em;
+      margin-bottom: 0.8em;
+    }
+  }
+
+  p {
+    @include contained($text-col-size);
+    margin-top: 1.2em;
+    margin-bottom: 1.4em;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: $project-text;
+    font-family: $serif;
+    text-align: left;
+  }
+
+  a {
+    color: $project-primary;
+  }
+
+  div.image-contain{
+    max-width: 1.2*$text-col-size;
+    margin: auto;
+    margin-top: 2em;
+
+    img {
+      max-width: 100%;
+      margin: auto;
+    }
+
+    span.caption {
+      display: block;
+      text-align: right;
+      font-size: 0.8rem;
+      margin-top: 0.5em;
+      color: $project-text;
+    }
+    span.credit {
+      display: block;
+      text-align: right;
+      font-size: 0.8rem;
+      color: $project-text;
+      margin-top: 0.5em;
+    }
+  }
+
+
+  @media screen and (max-width: $mediumlg-screen-width) and (min-width: $medium-screen-width){
+
+    section {
+
+
+      p {
+        margin-right: 40px;
+      }
+
+      h2 {
+        margin-right: 40px;
+      }
+
+      h3 {
+        margin-right: 40px;
+      }
+
+    }
+  }
+
+  @media screen and (max-width: $medium-screen-width) {
+    section {
+      margin-bottom: 2em;
+
+      p {
+          font-size: 1.1rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      h3{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+}
+
+
+aside.pquote{
+  max-width: 500px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
+  line-height: 2.3rem;
+
+  color: darken($project-primary, 1%);
+
+
+  &:after{
+    display: table;
+    width: 150px;
+    padding-top: 12px;
+    border-bottom: 6px solid $gray-lighter;
+    content: "";
+  }
+
+
+}
+
+
+audio
+{
+  margin-top: 1rem;
+  width: 100%;
+  -webkit-transition:all 0.5s linear;
+  -moz-transition:all 0.5s linear;
+  -o-transition:all 0.5s linear;
+  transition:all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 2px #999;
+  -webkit-box-shadow:  2px 2px 4px 2px #999;
+  box-shadow: 2px 2px 4px 2px #999;
+  -moz-border-radius:7px 7px 7px 7px ;
+  -webkit-border-radius:7px 7px 7px 7px ;
+  border-radius:7px 7px 7px 7px ;
+
+
+
+}
+
+audio::-webkit-media-controls-volume-slider{
+  -webkit-filter: hue-rotate(216deg) saturate(3);
+}
+audio::-webkit-media-controls-timeline{
+  -webkit-filter: hue-rotate(216deg) saturate(3);
+}
+audio::-internal-media-controls-download-button {
+  display:none;
+}
