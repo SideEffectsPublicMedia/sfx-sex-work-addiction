@@ -637,3 +637,8 @@ div#reactive-progress-hider.hidden {
     opacity: 1;
   }
 }
+@media screen and (min-width: 800px) and (max-width: 1020px) {
+  div#reactive-progress-hider {
+    display: none !important;
+  }
+}
