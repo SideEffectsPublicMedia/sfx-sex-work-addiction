@@ -66,7 +66,7 @@ $(document).ready(function() {
 
             $("section").each(function(i){
 
-                const numWaypoints = 5;
+                const numWaypoints = 4;
 
                 let sectionTop = $(this).offset().top;
                 let sectionHeight = $(this).height();
