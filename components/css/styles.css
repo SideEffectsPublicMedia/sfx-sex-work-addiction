@@ -396,7 +396,7 @@ audio::-internal-media-controls-download-button {
 }
 
 div.title-card-pa {
-  background-image: url("../img/primitive-embrace-vectorized.svg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
   background-position: right center;
   background-size: cover;
   background-repeat: repeat;
@@ -404,7 +404,7 @@ div.title-card-pa {
 }
 @media screen and (max-width: 1400px) {
   div.title-card-pa {
-    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
@@ -412,7 +412,7 @@ div.title-card-pa {
 }
 @media screen and (max-width: 800px) {
   div.title-card-pa {
-    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
@@ -442,7 +442,7 @@ div.title-card-pa div.card-content div.card-content-titles {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(-30vh);
+  transform: translateY(-35vh);
 }
 @media screen and (max-width: 1400px) {
   div.title-card-pa div.card-content div.card-content-titles {
@@ -457,7 +457,7 @@ div.title-card-pa div.card-content div.card-content-titles {
 div.title-card-pa div.card-content h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, Akzidenz Grotesk;
   color: #f7f7f9;
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: bold;
   margin-bottom: 0.2em;
   line-height: 1.0em;
@@ -480,7 +480,7 @@ div.title-card-pa div.card-content p.author {
 }
 @media screen and (max-width: 1400px) {
   div.title-card-pa div.card-content h1 {
-    font-size: 4.0rem;
+    font-size: 3.3rem;
     max-width: 53%;
   }
   div.title-card-pa div.card-content p.author {

@@ -1,19 +1,22 @@
+$background-dimming-strength: 0.1;
+
 div.title-card-pa{
   //background-color: rgba($project-primary, 0.85);
-  background-image: url("../img/primitive-embrace-vectorized.svg");
+  background: linear-gradient( rgba(0, 0, 0, $background-dimming-strength), rgba(0, 0, 0, $background-dimming-strength) ), url("../img/primitive-embrace-vectorized.svg");
+  //replaced background-image: url() when we wanted a darker, more contrasty look;
   background-position: right center;
   background-size: cover;
   background-repeat: repeat;
 
   @media screen and (max-width: $mediumlg-screen-width) {
-    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient( rgba(0, 0, 0, $background-dimming-strength), rgba(0, 0, 0, $background-dimming-strength) ), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
   }
 
   @media screen and (max-width: $medium-screen-width) {
-    background-image: url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient( rgba(0, 0, 0, $background-dimming-strength), rgba(0, 0, 0, $background-dimming-strength) ), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
@@ -50,7 +53,7 @@ div.title-card-pa{
       left: 0;
       right: 0;
       //margin-bottom: 26%;
-      transform: translateY(-30vh);
+      transform: translateY(-35vh);
 
       @media screen and (max-width: $mediumlg-screen-width){
         left: 30px;
@@ -65,7 +68,7 @@ div.title-card-pa{
     h1 {
       font-family: $sans-serif;
       color: $project-text-dark;
-      font-size: 5.5rem;
+      font-size: 4rem;
       font-weight: bold;
       margin-bottom: 0.2em;
       line-height: 1.0em;
@@ -91,7 +94,7 @@ div.title-card-pa{
 
     @media screen and (max-width: $mediumlg-screen-width){
       h1{
-        font-size: 4.0rem;
+        font-size: 3.3rem;
 
         max-width: 53%;
       }
