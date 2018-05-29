@@ -396,7 +396,7 @@ audio::-internal-media-controls-download-button {
 }
 
 div.title-card-pa {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/primitive-embrace-vectorized.svg");
   background-position: right center;
   background-size: cover;
   background-repeat: repeat;
@@ -404,7 +404,7 @@ div.title-card-pa {
 }
 @media screen and (max-width: 1400px) {
   div.title-card-pa {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
@@ -412,7 +412,7 @@ div.title-card-pa {
 }
 @media screen and (max-width: 800px) {
   div.title-card-pa {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/primitive-embrace-vectorized.svg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/primitive-embrace-vectorized.svg");
     background-position: center center;
     background-size: auto contain;
     background-repeat: repeat;
@@ -442,7 +442,7 @@ div.title-card-pa div.card-content div.card-content-titles {
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(-35vh);
+  transform: translateY(-25vh);
 }
 @media screen and (max-width: 1400px) {
   div.title-card-pa div.card-content div.card-content-titles {
@@ -465,9 +465,8 @@ div.title-card-pa div.card-content h1 {
 }
 div.title-card-pa div.card-content p.subhead {
   font-family: "Adobe Caslon Pro", Caslon, Georgia;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #d3d6d9;
+  font-size: 2rem;
+  color: #d0d4d6;
   max-width: 800px;
 }
 div.title-card-pa div.card-content p.author {
@@ -481,28 +480,28 @@ div.title-card-pa div.card-content p.author {
 @media screen and (max-width: 1400px) {
   div.title-card-pa div.card-content h1 {
     font-size: 3.3rem;
-    max-width: 53%;
+    max-width: 60%;
   }
   div.title-card-pa div.card-content p.author {
     font-size: 2.0rem;
     max-width: 50%;
   }
   div.title-card-pa div.card-content p.subhead {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     max-width: 50%;
   }
 }
 @media screen and (max-width: 800px) {
   div.title-card-pa div.card-content h1 {
     font-size: 2.3rem;
-    max-width: 53%;
+    max-width: 60%;
   }
   div.title-card-pa div.card-content p.author {
     font-size: 1.2rem;
     max-width: 50%;
   }
   div.title-card-pa div.card-content p.subhead {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     max-width: 50%;
   }
 }

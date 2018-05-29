@@ -1,4 +1,4 @@
-$background-dimming-strength: 0.1;
+$background-dimming-strength: 0.25;
 
 div.title-card-pa{
   //background-color: rgba($project-primary, 0.85);
@@ -53,7 +53,7 @@ div.title-card-pa{
       left: 0;
       right: 0;
       //margin-bottom: 26%;
-      transform: translateY(-35vh);
+      transform: translateY(-25vh);
 
       @media screen and (max-width: $mediumlg-screen-width){
         left: 30px;
@@ -77,9 +77,8 @@ div.title-card-pa{
 
     p.subhead{
       font-family: $serif;
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: $gray-light;
+      font-size: 2rem;
+      color: darken($gray-light, 1%);
       max-width: 800px;
     }
 
@@ -96,7 +95,7 @@ div.title-card-pa{
       h1{
         font-size: 3.3rem;
 
-        max-width: 53%;
+        max-width: 60%;
       }
 
       p.author {
@@ -104,7 +103,7 @@ div.title-card-pa{
         max-width: 50%;
       }
       p.subhead {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
         max-width: 50%;
       }
     }
@@ -113,14 +112,14 @@ div.title-card-pa{
       h1{
         font-size: 2.3rem;
 
-        max-width: 53%;
+        max-width: 60%;
       }
       p.author {
         font-size: 1.2rem;
         max-width: 50%;
       }
       p.subhead {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         max-width: 50%;
       }
     }
